@@ -1,0 +1,10 @@
+{% for menu in items %}
+<li>
+	<p>{{ menu.title }}</p>
+	{% if menu.menuitem_set.count %}
+	<ul>
+		{% include "tree_menu/menu.html" with items=menu.menuitem_set.all %}
+	</ul>
+	{% endif %}
+</li>
+{% endfor %}
