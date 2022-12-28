@@ -1,0 +1,39 @@
+ul {
+    list-style-type: none;
+}
+
+.nested {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.caret {
+    cursor: pointer;
+    user-select: none;
+    transition: all .5s ease;
+}
+
+.caret::before {
+    content: '\279C';
+    margin-right: 5px;
+}
+
+.caret:hover {
+    color: rgb(0, 119, 255);
+    transition: all .5s ease;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 72, 155);
+    transition: all .5s ease;
+
+}
+
+a:hover {
+    color: rgb(0, 119, 255);
+    transition: all .5s ease;
+}
